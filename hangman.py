@@ -1,10 +1,9 @@
 import random, re
-words_array = ['python', 'java', 'kotlin', 'javascript']
 print("H A N G M A N")
 while True:
 	menu = input('Type "play" to play the game, "exit" to quit: ')
 	if menu == "play":
-		choisen_word = random.choice(words_array)
+		choisen_word = input("Enter your word: ")
 		choisen_word_list = [i  for i in choisen_word]
 		letters_guessed_set = set()
 		lives = 8
